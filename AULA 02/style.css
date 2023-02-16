@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    min-height: 50vh;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    color: white;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: #0000ff;
+}
+
+.aluno {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.aluno__nota {
+    font-size: 120px;
+}
+
+.aluno__aprovado{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.aluno__reprovado{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(marvels-spider-man-pc-4k-jf.jpg);
+    background-size: cover;
+}
