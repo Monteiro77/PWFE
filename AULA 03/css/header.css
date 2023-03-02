@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+    height: 5vh;
+    width: 100%;
+}
+.profile{
+    padding-left: 3.5vh;
+    padding-top: 1.5vh;
+    grid-area: "profile";
+}
+.profile-image{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.0rem;
+    font-size: 3vh;
+    padding-top: 2vh;
+    color: black;
+    grid-area: "icons";
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #B4B4B4;
+    width: 40vh;
+    height: 3.5vh;
+    grid-area: "search";
+    
+}

@@ -1,0 +1,22 @@
+.apresentation{
+    grid-area: "apresentation";
+    width: 60vw;
+    background-color: #BEBEBE;
+
+}
+
+
+.messages{
+    grid-area: "messages";
+    width: 25vw;
+    height: 80vh;
+}
+
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "messages apresentation"
+    "messages apresentation";
+}
+

@@ -1,0 +1,27 @@
+body{
+    background-color: #4B5E8F;
+    padding-top: 5vh;
+    padding-right: 8vw;
+    padding-left: 8vw;
+}
+header{
+    display: flex;
+    height: 10vh;
+    width: 25vw;    
+    background-color: #455473;
+
+
+}
+
+main{
+    height: 80vh;
+    width: 100%;
+    background-color: #455473;
+}
+
+footer{
+    display: none;
+    height: 10vh;
+    
+    background-color: turquoise;
+}
