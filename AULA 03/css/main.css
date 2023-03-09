@@ -1,8 +1,9 @@
-.apresentation{
-    grid-area: "apresentation";
-    width: 60vw;
-    background-color: #BEBEBE;
-
+main{
+    display: grid;
+    grid-template-areas: 
+    "messages apresentation";
+    grid-template-columns: 
+    1fr 2fr;
 }
 
 
@@ -12,11 +13,93 @@
     height: 80vh;
 }
 
-
-main{
-    display: grid;
-    grid-template-areas: 
-    "messages apresentation"
-    "messages apresentation";
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #B4B4B4;
+    width: 20vw;
+    height: 3.5vh;
+    margin-left: 2.5vw;
+    border-radius: 10px;
+    
+}
+.icon-search{
+    margin-left: 0.5vw;
 }
 
+.spacer{
+    height: 0.5vh;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 2vh;
+}
+
+
+.apresentation{
+    width: 60vw;
+    background-color: #BEBEBE;
+    
+    }
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: 'Junge', serif;
+    font-size: 12.5vh;
+    color: #455473;
+    padding-top: 17vh;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 8vh;
+    letter-spacing: 3vh;
+}
+.legend{
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 5vh;
+    letter-spacing: 1vh;
+}
+
+.info-1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5vh;
+}
+
+.info-2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5vh;
+}
+
+.final-legend{
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+
+
+@media (max-width: 640px){
+    main{
+        width: 87vw;
+        height: 100%;
+    }
+    .apresentation{
+        display: none;
+    }
+    .spacer{
+        width: 56vh;
+    }
+    .search{
+        width: 95vw;
+    }
+}

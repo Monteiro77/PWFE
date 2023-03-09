@@ -4,13 +4,28 @@ body{
     padding-right: 8vw;
     padding-left: 8vw;
 }
+
 header{
+    display: grid;
+    grid-template-areas: 
+    "left right";
+}
+.header-left{
+
     display: flex;
-    height: 10vh;
+    height: 12vh;
     width: 25vw;    
     background-color: #455473;
+    align-items: center;
+    grid-area: "left";
 
+}
 
+.header-right{
+    height: 12vh;
+    width: 60vw;
+    background-color: #BEBEBE;
+    grid-area: "right";
 }
 
 main{
@@ -19,9 +34,23 @@ main{
     background-color: #455473;
 }
 
-footer{
-    display: none;
-    height: 10vh;
-    
-    background-color: turquoise;
+@media (max-width: 640px){
+
+    body{
+        height: 88vh;
+        padding: 0;
+        background-color: #455473;
+    }
+
+    header{
+        width: 100%;
+    }
+
+    .header-right{
+        display: none;
+    }
+    .header-left{
+        width: 100%;
+    }
 }
+

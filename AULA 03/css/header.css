@@ -1,17 +1,17 @@
-header{
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 .container{
-    height: 5vh;
-    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "profile icons";
+    grid-area: "container";
 }
+
 .profile{
     padding-left: 3.5vh;
     padding-top: 1.5vh;
     grid-area: "profile";
+
 }
 .profile-image{
     height: 2.5rem;
@@ -20,20 +20,18 @@ header{
 
 .icons{
     display: flex;
-    justify-content: space-between;
-    gap: 1.0rem;
+    gap: 30px;
     font-size: 3vh;
-    padding-top: 2vh;
     color: black;
+    padding-left: 10vw;
+    padding-top: 2vh;
     grid-area: "icons";
 }
 
-.search{
-    display: flex;
-    align-items: center;
-    background-color: #B4B4B4;
-    width: 40vh;
-    height: 3.5vh;
-    grid-area: "search";
-    
+@media (max-width: 640px){
+
+    .icons{
+        padding-top: 3vh;
+        padding-left: 30vw;
+    }
 }
