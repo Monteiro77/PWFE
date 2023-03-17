@@ -1,5 +1,3 @@
-
-
 .container{
     display: grid;
     grid-template-areas: 
@@ -26,6 +24,26 @@
     padding-left: 10vw;
     padding-top: 2vh;
     grid-area: "icons";
+}
+
+.header-right{
+    display: grid;
+    grid-template-areas: 
+    "image name";
+    grid-template-columns: 
+    1fr 9fr;
+}
+
+.header-right-image{
+    padding-top: 2vh;
+    padding-left: 2vw;
+    grid-area: image;
+}
+
+.header-name{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: name;
+    padding-top: 3.5vh;
 }
 
 @media (max-width: 640px){

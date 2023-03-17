@@ -13,7 +13,7 @@ header{
 .header-left{
 
     display: flex;
-    height: 12vh;
+    height: 8vh;
     width: 25vw;    
     background-color: #455473;
     align-items: center;
@@ -22,11 +22,14 @@ header{
 }
 
 .header-right{
-    height: 12vh;
-    width: 60vw;
+    height: 8vh;
+    width: 59vw;
     background-color: #BEBEBE;
     grid-area: "right";
+    
 }
+
+
 
 main{
     height: 80vh;

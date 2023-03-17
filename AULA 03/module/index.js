@@ -2,13 +2,11 @@
 
 import { contatos } from "./contatos.js"
 
+
+
 const criarCard = function(contatos) {
 
-    const search = document.createElement("div")
-    search.classList.add("search")
-
-    const spacer = document.createElement("div")
-    spacer.classList.add("spacer")
+    
 
     const card = document.createElement("div")
     card.classList.add("card")
@@ -27,6 +25,7 @@ const criarCard = function(contatos) {
 
    card.append(foto, name, description)
 
+   
    return card
 }
 
@@ -36,5 +35,9 @@ const carregarContatos = function(){
 
     container_contacts.replaceChildren(...card)
 }
+
+// document.getElementById('card').addEventListener('click', mostrarConversa)
+
+
 
 carregarContatos()
