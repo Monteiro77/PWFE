@@ -75,7 +75,8 @@ main{
 .apresentation{
     width: 59vw;
     background-color: #BEBEBE;
-    
+    display: flex;
+    align-items: flex-end;
     }
 
 .title{
@@ -123,6 +124,48 @@ main{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
 }
+
+.send{
+    width: 100%;
+    background-color: #455473; 
+    height:8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 15px;
+    display: flex;
+    
+    
+    
+}
+
+.send-message{
+    width:  45vw;
+    background-color: #B4B4B4;
+    height: 4vh;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+.message-text{
+    font-size: 1rem;
+    padding-left: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.message-card{
+    width: 10vw;
+    background-color: grey;
+      
+}
+
+
+
+
 
 
 @media (max-width: 640px){

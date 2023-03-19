@@ -37,6 +37,9 @@ main{
     background-color: #455473;
 }
 
+a{
+    color: #000;
+}
 @media (max-width: 640px){
 
     body{

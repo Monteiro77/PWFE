@@ -31,11 +31,12 @@
     grid-template-areas: 
     "image name";
     grid-template-columns: 
-    1fr 9fr;
+    1fr 9.5fr;
+    background-color: #455473;
 }
 
 .header-right-image{
-    padding-top: 2vh;
+    padding-top: 1.25vh;
     padding-left: 2vw;
     grid-area: image;
 }
@@ -43,7 +44,12 @@
 .header-name{
     font-family: Arial, Helvetica, sans-serif;
     grid-area: name;
-    padding-top: 3.5vh;
+    padding-top: 3.0vh;
+    color: #fff;
+}
+
+.message-card{
+    margin-bottom: 10vw;
 }
 
 @media (max-width: 640px){
