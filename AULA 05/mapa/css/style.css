@@ -1,0 +1,97 @@
+body{
+    background-image: url('../img/neymar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    
+}
+.card-context{  
+    width: 19vw;
+    height: 45vh;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    background-color: white;
+    border: 3px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  
+    display: grid;
+    grid-template-areas: 
+    "uf name"
+    "cidades cidades";
+    grid-template-columns: 
+    1fr 1.25fr ;
+    grid-template-rows: 
+    1fr
+    1.2fr;
+}
+
+.uf{
+    width: 5vw;
+    height: 5vw;    
+    background-color: #ffffff;
+    margin-left: 1.5vw;
+    margin-top: 3vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    grid-area: uf;
+}
+
+.uf-name{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+}
+
+.state-name{
+    margin-top: 5vh;
+    grid-area: name;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    height: 5vh;
+}
+
+.capital{
+    padding-top: 10vh;
+    grid-area: name;
+    font-weight: bold;
+    height: 5vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.region{
+    grid-area: name;
+    padding-top: 12vh;
+    font-weight: bold; 
+    height: 5vh; 
+    font-family: 'Inter', sans-serif;
+
+}
+.container-cidades{
+    height: 10%;
+    grid-area: cidades;
+}
+.cidades{
+    font-weight: bold;
+    grid-area: uf;
+    padding-left: 2.5vw;
+    
+}
+path{
+    fill: #ffffff;
+    stroke: #000000;
+    stroke-width: 2px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+path:hover{
+    fill: blue;
+}

@@ -147,6 +147,7 @@ main{
     border-radius: 3px;
     display: flex;
     align-items: center;
+    padding: 5px;
     
     
 
@@ -155,12 +156,6 @@ main{
     font-size: 1rem;
     padding-left: 1vw;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.message-card{
-    width: 10vw;
-    background-color: grey;
-      
 }
 
 
