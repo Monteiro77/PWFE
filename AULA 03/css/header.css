@@ -19,7 +19,7 @@
 .icons{
     display: flex;
     gap: 30px;
-    font-size: 3vh;
+    font-size: 25px;
     color: black;
     padding-left: 10vw;
     padding-top: 2vh;
@@ -29,33 +29,55 @@
 .header-right{
     display: grid;
     grid-template-areas: 
-    "image name";
+    "image name icons";
     grid-template-columns: 
-    1fr 9.5fr;
-    background-color: #455473;
+    1fr 9.5fr 2fr;
+    background-color: #000000;
 }
 
 .header-right-image{
-    padding-top: 1.25vh;
-    padding-left: 2vw;
+    display: flex;
+    justify-self: center;   
+    align-self: center;
     grid-area: image;
 }
 
 .header-name{
     font-family: Arial, Helvetica, sans-serif;
     grid-area: name;
-    padding-top: 3.0vh;
     color: #fff;
+    display: flex;
+    align-self: center;
 }
 
 .message-card{
     margin-bottom: 10vw;
 }
 
+.header-right-icons{
+    grid-area: icons;
+    display: flex;
+    align-self: center;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    padding: 1.5vw;
+
+}
+
+
 @media (max-width: 640px){
 
     .icons{
         padding-top: 3vh;
         padding-left: 30vw;
+    }
+
+    .header-name{
+        display: none;
+        
+    }
+
+    .header-right-image{
+        display: none;
     }
 }

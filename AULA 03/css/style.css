@@ -1,5 +1,5 @@
 body{
-    background-color: #4B5E8F;
+    background-color: #232222;
     padding-top: 5vh;
     padding-right: 8vw;
     padding-left: 8vw;
@@ -9,23 +9,23 @@ header{
     display: grid;
     grid-template-areas: 
     "left right";
+    height: 8vh;
 }
 .header-left{
 
     display: flex;
-    height: 8vh;
     width: 25vw;    
-    background-color: #455473;
+    background-color: #000;
     align-items: center;
-    grid-area: "left";
+    grid-area: left;
 
 }
 
 .header-right{
-    height: 8vh;
+
     width: 59vw;
-    background-color: #BEBEBE;
-    grid-area: "right";
+    background-color: #000000;
+    grid-area: right;
     
 }
 
@@ -34,11 +34,15 @@ header{
 main{
     height: 80vh;
     width: 100%;
-    background-color: #455473;
+    background-color: #858585;
 }
 
 a{
-    color: #000;
+    color: #ffffff;
+}
+
+i{
+    color: #ffff;
 }
 @media (max-width: 640px){
 

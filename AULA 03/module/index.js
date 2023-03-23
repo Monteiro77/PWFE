@@ -20,7 +20,7 @@ const criarCard = function(contatos) {
     name.textContent = contatos.name
 
     const description = document.createElement("span")
-    description.classList.add("sutitle-card")
+    description.classList.add("subtitle-card")
     description.textContent = contatos.description
 
    card.append(foto, name, description)

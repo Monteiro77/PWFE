@@ -11,6 +11,7 @@ main{
     grid-area: "messages";
     width: 25vw;
     height: 80vh;
+    background-color: #000000;
 }
 
 .search{
@@ -43,29 +44,38 @@ main{
     grid-template-columns: 
     1fr 5.5fr;
     width: 100%;
-    height: 7.5vh;
-    margin-top: 2vh;
+    height: 9.5vh;
     border-bottom: 1px solid #ffffff;
+    transition: .5s;
     
     
+}
+
+.card:hover{
+   background-color: #ffffff; 
 }
 
 .img-card{
     grid-area: imagem;
     padding-left: 1vw;
-    padding-top: 1vh;
+    display: flex;
+    align-self: center;
+
 }
 
 .name-card{
     grid-area: nome;
-    padding-top: 1vh;
+    padding-top: 2vh;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+     display: flex;
+     align-self: center;
+    
 }
 
 .subtitle-card{
     grid-area: legenda;
-    color: #d3d3d3;
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
 }
@@ -74,10 +84,16 @@ main{
 
 .apresentation{
     width: 59vw;
-    background-color: #BEBEBE;
-    display: flex;
-    align-items: flex-end;
-    }
+    background-image: url(../img/conversapng.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    display: grid;
+    grid-template-areas: 
+    "chat"
+    "container";
+    grid-template-rows: 5fr 0fr;
+}
+    
 
 .title{
     display: flex;
@@ -127,22 +143,19 @@ main{
 
 .send{
     width: 100%;
-    background-color: #455473; 
+    background-color: #000000; 
     height:8vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.5rem;
     padding: 15px;
-    display: flex;
-    
-    
     
 }
 
 .send-message{
     width:  45vw;
-    background-color: #B4B4B4;
+    background-color: #ffffff;
     height: 4vh;
     border-radius: 3px;
     display: flex;
@@ -157,6 +170,43 @@ main{
     padding-left: 1vw;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.box-message-receive{
+    
+    background-color: #ffffff;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 2px;
+    padding: 5px;
+    margin-left: 2vw;
+    margin-top: 12vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1vh;
+    
+}
+
+.box-message-sent{
+    
+    background-color: #D9D9D9;
+    width: 20vw;
+    height: 5vh;
+    padding: 5px;
+    border-radius: 2px;
+    margin-left: 36.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.chat-container{
+    grid-area: chat;
+
+    
+}
+
+.container-messages{
+    grid-area: container;
+}
+
 
 
 
