@@ -81,10 +81,9 @@
     grid-template-areas: 
     "chat"
     "container";
-    grid-template-rows: 5fr 0fr;
+    grid-template-rows: 5fr 5fr;
 }
     
-
 .title{
     display: flex;
     justify-content: center;
@@ -94,13 +93,6 @@
     padding-top: 28vh;
 }
 
-.subtitle{
-    display: flex;
-    justify-content: center;
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 8vh;
-    letter-spacing: 3vh;
-}
 .legend{
     display: flex;
     justify-content: center;
